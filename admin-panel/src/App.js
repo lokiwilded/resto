@@ -1,13 +1,14 @@
-// src/App.js
 import React from 'react';
-import TableGrid from './components/TableGrid';
+import { FloorPlanProvider } from './contexts/FloorPlanContext';
+import FloorPlanManager from './components/organisms/FloorPlanManager';
 
 function App() {
   return (
-    <div className="App">
-     
-      <TableGrid />
-    </div>
+    <FloorPlanProvider>
+      <div className="h-screen flex">
+        <FloorPlanManager />
+      </div>
+    </FloorPlanProvider>
   );
 }
 
