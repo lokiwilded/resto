@@ -1,12 +1,8 @@
-// backend/config/db.js
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(process.env.MONGO_URI); // No options needed for newer MongoDB versions
     console.log('MongoDB connected...');
   } catch (err) {
     console.error(`Error: ${err.message}`);

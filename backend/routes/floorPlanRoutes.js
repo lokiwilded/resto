@@ -1,4 +1,3 @@
-// backend/routes/floorPlanRoutes.js
 const express = require('express');
 const FloorPlan = require('../models/FloorPlan');
 

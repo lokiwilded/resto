@@ -1,4 +1,3 @@
-// src/pages/AdminPanel.js
 import React, { useState, useContext } from 'react';
 import { FloorPlanContext } from '../contexts/FloorPlanContext';
 import Sidebar from '../components/organisms/Sidebar';

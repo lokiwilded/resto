@@ -9,7 +9,7 @@ export default function TableSetupManager({ floorPlan, onSave }) {
     seats: '',
     isCombinable: false,
   });
-  const [bookedCells, setBookedCells] = useState([]); // List of booked cells
+  const [bookedCells, setBookedCells] = useState([]);
 
   const handleCellClick = (index) => {
     setSelectedCell(index);
